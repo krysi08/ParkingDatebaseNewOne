@@ -9,11 +9,6 @@ class ParkingDatabaseApplicationTests {
 
     @Test
     void contextLoads() {
-
-
-
-
-
     }
 
 
