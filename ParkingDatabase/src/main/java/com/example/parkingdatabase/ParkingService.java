@@ -4,13 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Run {
+public class ParkingService {
 
-    private CarRepo carRepo;
     @Autowired
-    public Run(CarRepo carRepo) {
-        this.carRepo = carRepo;
-    }
+    private CarRepo carRepo;
 
 
 
@@ -30,12 +27,20 @@ public class Run {
     all.forEach(System.out::println);
     }
 
+    public void addNewCar(Car car) {
+        carRepo.save(car);
+    }
+
     public void removeCar() {
         Car car = new Car("ABC23409", "Opel", "Astra", Color.BLACK);
         carRepo.delete(car);
 
         Iterable<Car> all = carRepo.findAll();
         all.forEach(System.out::println);
+    }
+
+    public Iterable<Car> listAllCars() {
+        return carRepo.findAll();
     }
 
 }

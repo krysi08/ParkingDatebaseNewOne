@@ -14,11 +14,11 @@ class ParkingDatabaseApplicationTests {
     }
 
 
-    @Test
-    @DisplayName("Should make a list with all cars on the parking")
-
-
-    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
+//    @Test
+//    @DisplayName("Should make a list with all cars on the parking")
+//
+//
+//    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
 
 
 }
