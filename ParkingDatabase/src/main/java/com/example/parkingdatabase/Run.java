@@ -31,8 +31,8 @@ public class Run {
     }
 
     public void removeCar() {
-        Car car2 = new Car("ABC23409", "Opel", "Astra", Color.BLACK);
-        carRepo.delete(car2);
+        Car car = new Car("ABC23409", "Opel", "Astra", Color.BLACK);
+        carRepo.delete(car);
 
         Iterable<Car> all = carRepo.findAll();
         all.forEach(System.out::println);

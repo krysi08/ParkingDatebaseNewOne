@@ -6,7 +6,7 @@ public class PriceList {
 
         PriceList list = new PriceList();
 
-        list.settleCostsParking(96);
+       // list.settleCostsParking(96);
     }
 
     public void settleCostsParking(double timeParking) {
