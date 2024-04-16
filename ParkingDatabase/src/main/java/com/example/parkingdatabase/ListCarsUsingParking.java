@@ -23,9 +23,6 @@ public class ListCarsUsingParking {
         System.out.println(iter.previous());
 
     }
-
-
-
     }
 
 
