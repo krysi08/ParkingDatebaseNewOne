@@ -12,16 +12,7 @@ import java.util.List;
 @SpringBootTest
 class ParkingDatabaseApplicationTests {}
 
-    public class AssertjTest {
-
-
-
-
-    }
-
-
-
-
+    public class AssertjTest {}
 
     @Test
     void test_list_addingcars_works() {
