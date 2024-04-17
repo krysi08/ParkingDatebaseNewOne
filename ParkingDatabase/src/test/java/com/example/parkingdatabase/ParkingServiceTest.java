@@ -33,4 +33,21 @@ public class ParkingServiceTest {
         assertEquals(cars.get(0).getManufacture(), "Opel");
         assertEquals(cars.get(0).getModel(), "Corsa");
     }
+
+    @Test
+    public void removeCar(){
+
+        Car car1 = new Car("456","5","BMW",Color.BLACK);
+
+        parkingService.removeCar(car1);
+
+        List<Car> cars1 = new ArrayList<>();
+        parkingService.listAllCars().forEach(cars1::remove);
+        assertEquals(cars.size(), 0);
+        assertEquals(cars.get(0).getColor(), null);
+        assertEquals(cars.get(0).getIDname(), null);
+        assertEquals(cars.get(0).getManufacture(), null);
+        assertEquals(cars.get(0).getModel(), null);
+
+    }
 }
