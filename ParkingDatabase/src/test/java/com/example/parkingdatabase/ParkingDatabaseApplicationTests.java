@@ -57,11 +57,11 @@ class ParkingDatabaseApplicationTests {}
                 .doesNotContain("ABC34532")
     }
 
-    @Test
-    @DisplayName("Should make a list with all cars on the parking")
-
-
-    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
+//    @Test
+//    @DisplayName("Should make a list with all cars on the parking")
+//
+//
+//    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
 
 
 }

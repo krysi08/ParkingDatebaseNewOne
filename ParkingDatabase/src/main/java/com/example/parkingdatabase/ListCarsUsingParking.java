@@ -7,14 +7,14 @@ import java.util.ListIterator;
 public class ListCarsUsingParking {
 
 
-    private Run run;
+    private ParkingService run;
 
-    public ListCarsUsingParking(Run run) {
+    public ListCarsUsingParking(ParkingService run) {
         this.run = run;
     }
 
 
-    LinkedList<Run> carlist = new LinkedList<Run>();
+    LinkedList<ParkingService> carlist = new LinkedList<ParkingService>();
 
 
     ListIterator iter = carlist.listIterator(carlist.size());
