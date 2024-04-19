@@ -9,7 +9,6 @@ public class ParkingService {
     @Autowired
     private CarRepo carRepo;
 
-
     public void addNewCar(Car car) {
         carRepo.save(car);
     }

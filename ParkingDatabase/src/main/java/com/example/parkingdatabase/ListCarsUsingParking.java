@@ -1,28 +1,31 @@
 package com.example.parkingdatabase;
 
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class ListCarsUsingParking {
 
+    private final ParkingService parkingService;
 
-    private ParkingService run;
-
-    public ListCarsUsingParking(ParkingService run) {
-        this.run = run;
+    public ListCarsUsingParking(ParkingService parkingService) {
+        this.parkingService = parkingService;
     }
 
+   LinkedList<ParkingService> parkingServices = new LinkedList<ParkingService>();
 
-    LinkedList<ParkingService> carlist = new LinkedList<ParkingService>();
+
+  //  for (ParkingService e: parkingServices){
+     //   System.out.println(e.toString());
+    //}
 
 
-    ListIterator iter = carlist.listIterator(carlist.size());
+   ListIterator iter = parkingServices.listIterator(parkingServices.size());
     {
        while(iter.hasPrevious())
-        System.out.println(iter.previous());
-
-    }
+           System.out.println(iter.previous());
+ }
     }
 
 
