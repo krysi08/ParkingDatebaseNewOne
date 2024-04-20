@@ -12,20 +12,21 @@ public class ListCarsUsingParking {
     public ListCarsUsingParking(ParkingService parkingService) {
         this.parkingService = parkingService;
     }
-
-   LinkedList<ParkingService> parkingServices = new LinkedList<ParkingService>();
-
-
-  //  for (ParkingService e: parkingServices){
-     //   System.out.println(e.toString());
-    //}
+   public LinkedList<ParkingService> parkingServices = new LinkedList<ParkingService>();
 
 
-   ListIterator iter = parkingServices.listIterator(parkingServices.size());
-    {
+    /*
+   for (ParkingService e: parkingServices){
+        System.out.println(e.toString());
+   }
+  */
+
+
+    ListIterator iter = parkingServices.listIterator(parkingServices.size());
+   {
        while(iter.hasPrevious())
            System.out.println(iter.previous());
- }
+}
     }
 
 
