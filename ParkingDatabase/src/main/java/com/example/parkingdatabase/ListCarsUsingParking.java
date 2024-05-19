@@ -13,15 +13,11 @@ public class ListCarsUsingParking {
         this.parkingService = parkingService;
     }
    public LinkedList<ParkingService> parkingServices = new LinkedList<ParkingService>();
-
-
     /*
    for (ParkingService e: parkingServices){
         System.out.println(e.toString());
    }
   */
-
-
     ListIterator iter = parkingServices.listIterator(parkingServices.size());
    {
        while(iter.hasPrevious())

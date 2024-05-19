@@ -9,16 +9,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootTest
-class ParkingDatabaseApplicationTests {}
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
-    public class AssertjTest {}
+@SpringBootTest
+class ParkingDatabaseApplicationTests {
+    private CarRepo carRepo;
 
     @Test
     void test_list_addingcars_works() {
 
 
-        Car car = new Car("ABC23409","Opel","Astra",Color.BLACK);
+        Car car = new Car("ABC23409", "Opel", "Astra", Color.BLACK);
         Car car2 = new Car("YFH23409", "Renault", "5W", Color.RED);
         Car car3 = new Car("OFC23409", "Peugeot", "206", Color.WHITE);
 
@@ -42,8 +43,9 @@ class ParkingDatabaseApplicationTests {}
         all.forEach(System.out::println);
 
     }
+}
 
-    @Test
+   /* @Test
     void test_list_done() {
 
         List<String> list = Arrays.asList("RTE43521", "BMW", "M5");
@@ -57,11 +59,10 @@ class ParkingDatabaseApplicationTests {}
                 .doesNotContain("ABC34532")
     }
 
-//    @Test
-//    @DisplayName("Should make a list with all cars on the parking")
-//
-//
-//    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
+     @Test
+    @DisplayName("Should make a list with all cars on the parking")
 
 
-}
+    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
+
+    */
