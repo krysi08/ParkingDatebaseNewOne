@@ -17,6 +17,7 @@ public class CarWebConfig{
 
     @Bean
     public CarWebConfig carWebConfig() {
+       // carWebConfig.setMessage("New Car"); - it doesn't work
         return carWebConfig;
     }
 

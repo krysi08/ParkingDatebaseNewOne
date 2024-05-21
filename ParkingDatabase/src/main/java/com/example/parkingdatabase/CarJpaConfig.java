@@ -24,7 +24,6 @@ public class CarJpaConfig {
         dataSource.setUsername("jdbc.user");
         dataSource.setPassword("jdbc.pass");
 
-
         return dataSource;
     }
 }

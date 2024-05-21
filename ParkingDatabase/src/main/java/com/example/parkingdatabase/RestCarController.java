@@ -1,5 +1,6 @@
 package com.example.parkingdatabase;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -7,9 +8,12 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/car")
 
 public class RestCarController {
+
+    @Autowired
+    private CarRepo carRepo;
 
     private List<Car> listCars;
 
