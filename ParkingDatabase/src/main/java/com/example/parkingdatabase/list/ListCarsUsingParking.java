@@ -1,7 +1,8 @@
-package com.example.parkingdatabase;
+package com.example.parkingdatabase.list;
 
 
-import java.util.ArrayList;
+import com.example.parkingdatabase.manager.ParkingService;
+
 import java.util.LinkedList;
 import java.util.ListIterator;
 

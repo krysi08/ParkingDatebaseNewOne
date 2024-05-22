@@ -1,5 +1,6 @@
-package com.example.parkingdatabase;
+package com.example.parkingdatabase.api;
 
+import com.example.parkingdatabase.dao.entity.Car;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;

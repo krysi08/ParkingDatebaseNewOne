@@ -1,13 +1,9 @@
 package com.example.parkingdatabase;
 
-import com.jayway.jsonpath.internal.function.sequence.Index;
-import org.assertj.core.internal.Arrays;
-import org.junit.jupiter.api.DisplayName;
+import com.example.parkingdatabase.dao.entity.Car;
+import com.example.parkingdatabase.dao.entity.CarRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 

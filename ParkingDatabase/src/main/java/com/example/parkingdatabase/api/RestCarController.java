@@ -1,5 +1,8 @@
-package com.example.parkingdatabase;
+package com.example.parkingdatabase.api;
 
+import com.example.parkingdatabase.Color;
+import com.example.parkingdatabase.dao.entity.Car;
+import com.example.parkingdatabase.dao.entity.CarRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,11 +22,11 @@ public class RestCarController {
 
     public RestCarController() {
         listCars = new ArrayList<Car>();
-        listCars.add(new Car("1A","Opel","Insignia",Color.BLACK));
+        listCars.add(new Car("1A","Opel","Insignia", Color.BLACK));
         listCars.add(new Car("1B","BMW","5",Color.WHITE));
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Car> getAll() {
     return listCars;
     }
@@ -35,7 +38,7 @@ public class RestCarController {
     }
 
     @PostMapping
- public boolean addCar(@RequestBody Car car) {
+    public boolean addCar(@RequestBody Car car) {
         return listCars.add(car);
     }
 

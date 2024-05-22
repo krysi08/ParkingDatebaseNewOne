@@ -1,8 +1,8 @@
 package com.example.parkingdatabase;
 
-import org.junit.jupiter.api.BeforeAll;
+import com.example.parkingdatabase.dao.entity.Car;
+import com.example.parkingdatabase.manager.ParkingService;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
