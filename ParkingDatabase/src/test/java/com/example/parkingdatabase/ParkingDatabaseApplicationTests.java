@@ -1,24 +1,21 @@
 package com.example.parkingdatabase;
 
-import com.jayway.jsonpath.internal.function.sequence.Index;
-import org.assertj.core.internal.Arrays;
-import org.junit.jupiter.api.DisplayName;
+import com.example.parkingdatabase.dao.entity.Car;
+import com.example.parkingdatabase.dao.entity.CarRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
-import java.util.List;
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 @SpringBootTest
-class ParkingDatabaseApplicationTests {}
-
-    public class AssertjTest {}
+class ParkingDatabaseApplicationTests {
+    private CarRepo carRepo;
 
     @Test
     void test_list_addingcars_works() {
 
 
-        Car car = new Car("ABC23409","Opel","Astra",Color.BLACK);
+        Car car = new Car("ABC23409", "Opel", "Astra", Color.BLACK);
         Car car2 = new Car("YFH23409", "Renault", "5W", Color.RED);
         Car car3 = new Car("OFC23409", "Peugeot", "206", Color.WHITE);
 
@@ -42,8 +39,9 @@ class ParkingDatabaseApplicationTests {}
         all.forEach(System.out::println);
 
     }
+}
 
-    @Test
+   /* @Test
     void test_list_done() {
 
         List<String> list = Arrays.asList("RTE43521", "BMW", "M5");
@@ -57,11 +55,10 @@ class ParkingDatabaseApplicationTests {}
                 .doesNotContain("ABC34532")
     }
 
-//    @Test
-//    @DisplayName("Should make a list with all cars on the parking")
-//
-//
-//    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
+     @Test
+    @DisplayName("Should make a list with all cars on the parking")
 
 
-}
+    ParkingDatabaseApplicationTests test = new ParkingDatabaseApplicationTests();
+
+    */

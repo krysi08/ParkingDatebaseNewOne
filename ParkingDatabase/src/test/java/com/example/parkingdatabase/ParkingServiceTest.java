@@ -1,8 +1,8 @@
 package com.example.parkingdatabase;
 
-import org.junit.jupiter.api.BeforeAll;
+import com.example.parkingdatabase.dao.entity.Car;
+import com.example.parkingdatabase.manager.ParkingService;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,19 +35,19 @@ public class ParkingServiceTest {
     }
 
     @Test
-    public void removeCar(){
+    public void removeCar() {
 
-        Car car1 = new Car("456","5","BMW",Color.BLACK);
+        Car car1 = new Car("456", "5", "BMW", Color.BLACK);
 
         parkingService.removeCar(car1);
 
         List<Car> cars1 = new ArrayList<>();
         parkingService.listAllCars().forEach(cars1::remove);
-        assertEquals(cars.size(), 0);
-        assertEquals(cars.get(0).getColor(), null);
-        assertEquals(cars.get(0).getIDname(), null);
-        assertEquals(cars.get(0).getManufacture(), null);
-        assertEquals(cars.get(0).getModel(), null);
+        assertEquals(cars1.size(), 0);
+        assertEquals(cars1.get(0).getColor(), null);
+        assertEquals(cars1.get(0).getIDname(), null);
+        assertEquals(cars1.get(0).getManufacture(), null);
+        assertEquals(cars1.get(0).getModel(), null);
 
     }
 }

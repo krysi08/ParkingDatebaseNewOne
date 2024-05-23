@@ -1,0 +1,28 @@
+package com.example.parkingdatabase.confiq;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
+import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
+import org.springframework.context.annotation.Bean;
+
+public class CarWebConfig{
+
+    ObjectMapper objectMapper = new ObjectMapper();
+    CarWebConfig carWebConfig = new CarWebConfig();
+
+    @Bean
+    public WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> enableDefaultServlet() {
+        return factory -> factory.setRegisterDefaultServlet(true);
+    }
+
+    @Bean
+    public CarWebConfig carWebConfig() {
+       // carWebConfig.setMessage("New Car"); - it doesn't work
+        return carWebConfig;
+    }
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        return objectMapper;
+    }
+}
